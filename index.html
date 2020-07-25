@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+
+	<title>API ZTM</title>
+</head>
+<body>
+	<div class="container">
+		<div class="card bg-light mb-3" style="max-width: 18rem;">
+			<div class="card-header">
+				<h5 class="card-title">Number Facts</h5>
+				<p> Enter a number to get a fact about it:</p>
+				<div class="input-group">
+					<input type="number" class="form-control" placeholder="Enter number" aria-label="Text input with dropdown button" id="userInput" value="">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="buttToChange" >Fact Type</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#" onclick="dropDown(this.id,this.parentElement.parentElement.children[0])" id="trivia" value="trivia">Trivia</a>
+							<a class="dropdown-item" href="#" onclick="dropDown(this.id,this.parentElement.parentElement.children[0])" id="math" value="math">Math</a>
+							<a class="dropdown-item" href="#" onclick="dropDown(this.id,this.parentElement.parentElement.children[0])" id="date" value="date">Date</a>
+							<a class="dropdown-item" href="#" onclick="dropDown(this.id,this.parentElement.parentElement.children[0])" id="year" value="year">Year</a>
+							
+						</div>
+					</div>
+				</div>
+				<button  class="btn btn-success" onclick="getFact()">Get Fact</button>
+			</div>
+				<div class="card-body">
+					<h5 class="card-title">Fact</h5>
+					<p class="card-text" id="result">Search Number Above To Get Fact</p>
+				</div>
+			</div>
+
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
